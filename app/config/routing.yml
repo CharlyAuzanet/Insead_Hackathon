@@ -1,0 +1,4 @@
+insead:
+    resource: "@InseadBundle/Resources/config/routing.yml"
+    prefix:   /
+
