@@ -91,3 +91,8 @@ fos_user:
         mailer: fos_user.mailer.default
 
 
+twig:
+    form_themes:
+    - 'views/materialize_layout.html.twig'
+
+

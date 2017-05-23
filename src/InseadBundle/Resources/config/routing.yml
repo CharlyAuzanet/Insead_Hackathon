@@ -1,3 +1,11 @@
 insead_homepage:
     path:     /
     defaults: { _controller: InseadBundle:Default:index }
+
+insead_rules:
+    path:     /rules
+    defaults: { _controller: InseadBundle:Default:rules }
+
+insead_q1:
+    path:     /q1
+    defaults: { _controller: InseadBundle:Default:questionDemo1 }
