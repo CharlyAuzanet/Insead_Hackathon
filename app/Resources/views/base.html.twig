@@ -11,12 +11,17 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="#"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('bundles/insead/stylesheets/main.css') }}"
         
         {% block stylesheets %}{% endblock %}
    
     </head>
     <body>
-        {% block body %}{% endblock %}
+    {% block progress %}
+    {% endblock %}
+    {% block head %}{% endblock %}
+    {% block body %}{% endblock %}
+    {% block footer %}{% endblock %}
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>

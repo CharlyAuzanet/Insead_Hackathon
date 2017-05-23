@@ -7,6 +7,11 @@ namespace InseadBundle\Entity;
  */
 class Questions
 {
+    public function __toString()
+    {
+        return $this->title;
+    }
+
     /**
      * @var int
      */
