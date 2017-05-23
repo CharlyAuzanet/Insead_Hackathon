@@ -1,3 +1,4 @@
+
 insead_questionDemo1:
     path:     /q1
     defaults: { _controller: InseadBundle:QuestionDemo:questionDemo1 }
@@ -19,6 +20,7 @@ insead_questionDemo5:
     defaults: { _controller: InseadBundle:QuestionDemo:questionDemo5 }
 
 
-
-
+insead_rules:
+    path:     /rules
+    defaults: { _controller: InseadBundle:Default:rules }
 

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rules Pages{% endblock %}
+
+{% block body %}
+<div id="rules">
+	
+	<div class="row rules">
+		<div class="col s12 content_rules">
+			<div class="col s12 center-align title_rules">
+				<h2>Demographic Survey</h2>
+			</div>
+			<div class="col s12 center-align content_rules">
+				<p>Please answer the following questions so we can better match you with future surveys.<br/>
+					Your data will be strictly protected.<br/>
+					Your information will only be released in anonymized and aggregated form.
+				<p>
+			</div>
+		</div>
+		<div class="row bt">
+			<div class="col s6 offset-s3 center-align btn_begin">
+			<a href="{{ path('insead_questionDemo1') }}">
+				<button class="btn pulse" type="submit" name="action">Begin
+					<i class="material-icons right">send</i>
+				</button>
+			</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	
+{% endblock %}
