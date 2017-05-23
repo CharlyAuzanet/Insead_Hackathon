@@ -7,5 +7,19 @@
     </div>
 {% endblock %}
 {% block body %}
-    <h1>{{ q1 }}</h1>
+    <h1>{{ q1 }}PAGE 1</h1>
+{% endblock %}
+
+{% block footer %}
+    <div class="row footerDemo z-depth-3">
+        <div class="col s12 ">
+            
+            <div class="col s6 offset-s6 center-align">
+                <a href="{{ path('insead_questionDemo2') }}">
+                    <button class="btn pulse">Next
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
 {% endblock %}
