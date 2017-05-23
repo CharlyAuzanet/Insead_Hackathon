@@ -1,4 +1,23 @@
-/* line 3, ../sass/rules.scss */
+/* line 4, ../sass/rules.scss */
 #rules body {
-  background-color: blue;
+  height: 100vh;
+  width: 100%;
+}
+/* line 10, ../sass/rules.scss */
+#rules .title_rules {
+  margin-top: 60px;
+}
+/* line 15, ../sass/rules.scss */
+#rules .rules {
+  height: 100vh;
+  margin-bottom: 0;
+}
+/* line 21, ../sass/rules.scss */
+#rules p {
+  font-size: x-large;
+  line-height: 50px;
+}
+/* line 26, ../sass/rules.scss */
+#rules .btn_begin {
+  margin-top: 60px;
 }
