@@ -7,7 +7,12 @@
     </div>
 {% endblock %}
 {% block body %}
-    <h1>{{ q1 }}PAGE 1</h1>
+
+<h2>{{ question }}</h2>
+    {% for choice in question.choices %}
+
+        {{ choice.content }}
+    {% endfor %}
 {% endblock %}
 
 {% block footer %}

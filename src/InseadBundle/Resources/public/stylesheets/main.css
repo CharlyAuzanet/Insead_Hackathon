@@ -17,6 +17,15 @@
 .footerDemo {
   background-color: red;
   padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+
+/* line 4, ../sass/_global.scss */
+img {
+  width: 100%;
 }
 
 /* line 4, ../sass/rules.scss */
@@ -45,4 +54,15 @@
 /* line 33, ../sass/rules.scss */
 #rules .btn_begin {
   margin-top: 60px;
+}
+
+/* line 3, ../sass/_login.scss */
+.row_login {
+  background-color: grey;
+  height: 90vh;
+}
+
+/* line 7, ../sass/_login.scss */
+.logo {
+  margin-top: 15px;
 }

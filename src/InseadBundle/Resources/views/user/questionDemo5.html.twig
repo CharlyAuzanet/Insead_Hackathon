@@ -3,11 +3,14 @@
 
 {% block progress %}
     <div class="progress">
-        <div class="determinate" style="width: 40%"></div>
+        <div class="determinate" style="width: 100%"></div>
     </div>
 {% endblock %}
 {% block body %}
-    <h1>Question 5</h1>
+<h2>{{ question }}</h2>
+    {% for choice in question.choices %}
+        {{ choice.content }}
+    {% endfor %}
 {% endblock %}
 
 {% block footer %}
@@ -15,7 +18,7 @@
         <div class="col s12 ">
             
             <div class="col s6 offset-s6 center-align">
-                <a href="{{ path('insead_rules') }}">
+                <a href="{{ path('fos_user_registration_register') }}">
                     <button class="btn pulse">Next
                     </button>
                 </a>

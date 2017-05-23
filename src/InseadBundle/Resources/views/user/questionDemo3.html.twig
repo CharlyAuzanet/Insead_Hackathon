@@ -3,11 +3,14 @@
 
 {% block progress %}
     <div class="progress">
-        <div class="determinate" style="width: 40%"></div>
+        <div class="determinate" style="width: 60%"></div>
     </div>
 {% endblock %}
 {% block body %}
-    <h1>Question 3</h1>
+<h2>{{ question }}</h2>
+    {% for choice in question.choices %}
+        {{ choice.content }}
+    {% endfor %}
 {% endblock %}
 
 {% block footer %}
