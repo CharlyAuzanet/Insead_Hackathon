@@ -1,3 +1,24 @@
-insead_homepage:
-    path:     /
-    defaults: { _controller: InseadBundle:Default:index }
+insead_questionDemo1:
+    path:     /q1
+    defaults: { _controller: InseadBundle:QuestionDemo:questionDemo1 }
+
+insead_questionDemo2:
+    path:     /q2
+    defaults: { _controller: InseadBundle:QuestionDemo:questionDemo2 }
+
+insead_questionDemo3:
+    path:     /q3
+    defaults: { _controller: InseadBundle:QuestionDemo:questionDemo3 }
+
+insead_questionDemo4:
+    path:     /q4
+    defaults: { _controller: InseadBundle:QuestionDemo:questionDemo4 }
+
+insead_questionDemo5:
+    path:     /q5
+    defaults: { _controller: InseadBundle:QuestionDemo:questionDemo5 }
+
+
+
+
+
