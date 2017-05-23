@@ -1,0 +1,33 @@
+InseadBundle\Entity\Ad:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\AdRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+        questions:
+            targetEntity: InseadBundle\Entity\Questions
+            inversedBy: Ads
+        users:
+            targetEntity: InseadBundle\Entity\User
+            mappedBy: Ads
+
+    oneToOne:
+        sources:
+            targetEntity: InseadBundle\Entity\Sources
+
+    manyToOne:
+        parameters:
+            targetEntity: InseadBundle\Entity\Parameters
+
+

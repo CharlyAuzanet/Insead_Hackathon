@@ -1,0 +1,20 @@
+InseadBundle\Entity\Answer:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\AnswerRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+        questions:
+            targetEntity: InseadBundle\Entity\Questions
+            inversedBy: answers
+
+    manyToOne:
+        choices:
+            targetEntity: InseadBundle\Entity\Choices

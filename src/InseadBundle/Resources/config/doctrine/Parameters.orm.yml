@@ -1,0 +1,20 @@
+InseadBundle\Entity\Parameters:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\ParametersRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        value:
+            type: string
+            length: 255
+        type:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+
+

@@ -1,0 +1,15 @@
+InseadBundle\Entity\Choices:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\ChoicesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        content:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

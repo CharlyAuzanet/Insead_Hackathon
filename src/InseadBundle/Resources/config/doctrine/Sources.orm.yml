@@ -1,0 +1,15 @@
+InseadBundle\Entity\Sources:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\SourcesRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        url:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

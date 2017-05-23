@@ -1,0 +1,31 @@
+InseadBundle\Entity\Questions:
+    type: entity
+    table: null
+    repositoryClass: InseadBundle\Repository\QuestionsRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        title:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }
+
+    manyToMany:
+        Ads:
+            targetEntity: InseadBundle\Entity\Ad
+            mappedBy: questions
+
+        answers:
+            targetEntity: InseadBundle\Entity\Answer
+            mappedBy: questions
+
+        choices:
+            targetEntity: InseadBundle\Entity\Choices
+
+    manyToOne:
+        parameters:
+            targetEntity: InseadBundle\Entity\Parameters

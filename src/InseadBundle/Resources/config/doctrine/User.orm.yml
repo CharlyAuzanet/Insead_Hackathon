@@ -10,3 +10,7 @@ InseadBundle\Entity\User:
                 strategy: AUTO
     lifecycleCallbacks: {  }
 
+    manyToMany:
+        Ads:
+            targetEntity: InseadBundle\Entity\Ad
+            inversedBy: users
