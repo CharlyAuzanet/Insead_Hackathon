@@ -1,0 +1,37 @@
+{% extends 'base.html.twig' %}
+{% block body %}
+	
+	<div id="questionAd2">
+		
+		<div class="row img">
+			<div class="col s6 offset-s3 img_container">
+				<div class="z-depth-3">
+					<img class="responsive-img" src="http://www.kite-surf-maroc.com/upload/best_kiteboarding.jpeg">
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s8 offset-s2 center align">
+			<h4>What three words would you use to describe this ad?</h4>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s8 offset-s2 left align text">
+				<div class="z-depth-3">
+					<textarea name="textarea">
+                     ...
+					</textarea>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col s2 offset-s5 btn_next">
+				<a href="{{ path('insead_questionAd3') }}">
+					<button class="btn pulse" type="submit" name="action">Next
+						<i class="material-icons right">send</i>
+					</button>
+				</a>
+			</div>
+		</div>
+	</div>
+{% endblock %}

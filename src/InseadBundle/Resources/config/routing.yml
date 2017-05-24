@@ -19,7 +19,6 @@ insead_questionDemo5:
     path:     /q5
     defaults: { _controller: InseadBundle:QuestionDemo:questionDemo5 }
 
-
 insead_rules:
     path:     /rules
     defaults: { _controller: InseadBundle:Default:rules }
@@ -27,4 +26,20 @@ insead_rules:
 insead_adList:
     path: /adlist
     defaults: { _controller: InseadBundle:Default:adlist }
+
+insead_adVideo:
+    path:     /advideo
+    defaults: { _controller: InseadBundle:Default:adVideo }
+
+insead_questionAd1:
+    path:     /questionAd1
+    defaults: { _controller: InseadBundle:Default:questionAd1 }
+
+insead_questionAd2:
+    path:     /questionAd2
+    defaults: { _controller: InseadBundle:Default:questionAd2 }
+
+insead_questionAd3:
+    path:     /questionAd3
+    defaults: { _controller: InseadBundle:Default:questionAd3 }
 
