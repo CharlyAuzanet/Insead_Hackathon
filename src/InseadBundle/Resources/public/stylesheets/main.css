@@ -28,30 +28,30 @@ img {
   width: 100%;
 }
 
-/* line 4, ../sass/rules.scss */
+/* line 4, ../sass/_rules.scss */
 #rules body {
   height: 100vh;
   width: 100%;
 }
-/* line 10, ../sass/rules.scss */
+/* line 10, ../sass/_rules.scss */
 #rules .content_rules {
   margin-top: 50px;
 }
-/* line 14, ../sass/rules.scss */
+/* line 14, ../sass/_rules.scss */
 #rules .title_rules {
   margin-top: 60px;
 }
-/* line 20, ../sass/rules.scss */
+/* line 20, ../sass/_rules.scss */
 #rules .rules {
   height: 100vh;
   margin-bottom: 0;
 }
-/* line 27, ../sass/rules.scss */
+/* line 27, ../sass/_rules.scss */
 #rules p {
   font-size: x-large;
   line-height: 50px;
 }
-/* line 33, ../sass/rules.scss */
+/* line 33, ../sass/_rules.scss */
 #rules .btn_begin {
   margin-top: 60px;
 }
@@ -65,4 +65,103 @@ img {
 /* line 7, ../sass/_login.scss */
 .logo {
   margin-top: 15px;
+}
+
+/* line 4, ../sass/_adVideo.scss */
+#adVideo .video-container {
+  margin-top: 10px;
+}
+/* line 9, ../sass/_adVideo.scss */
+#adVideo .cam {
+  margin-bottom: 0;
+}
+/* line 14, ../sass/_adVideo.scss */
+#adVideo .cam_container {
+  margin-top: 10px;
+  font-style: italic;
+}
+/* line 20, ../sass/_adVideo.scss */
+#adVideo .row {
+  margin-bottom: 0;
+}
+/* line 25, ../sass/_adVideo.scss */
+#adVideo .indice, #adVideo p {
+  margin-bottom: 0;
+}
+/* line 30, ../sass/_adVideo.scss */
+#adVideo .ind_100 {
+  margin-left: 30%;
+}
+/* line 35, ../sass/_adVideo.scss */
+#adVideo .btn_next {
+  margin-top: 20px;
+}
+
+/* line 3, ../sass/_questionAd1.scss */
+#questionAd1 .img {
+  margin-bottom: 0;
+}
+/* line 8, ../sass/_questionAd1.scss */
+#questionAd1 .img_container {
+  margin-top: 10px;
+}
+/* line 12, ../sass/_questionAd1.scss */
+#questionAd1 .row {
+  margin-bottom: 0;
+}
+/* line 17, ../sass/_questionAd1.scss */
+#questionAd1 .btn_next {
+  margin-top: 60px;
+}
+
+/* line 3, ../sass/_questionAd2.scss */
+#questionAd2 .img {
+  margin-bottom: 0;
+}
+/* line 8, ../sass/_questionAd2.scss */
+#questionAd2 .img_container {
+  margin-top: 10px;
+}
+/* line 12, ../sass/_questionAd2.scss */
+#questionAd2 .row {
+  margin-bottom: 0;
+}
+/* line 17, ../sass/_questionAd2.scss */
+#questionAd2 textarea {
+  height: 150px;
+  background-color: #6E6E6E;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  text-align: left;
+}
+/* line 27, ../sass/_questionAd2.scss */
+#questionAd2 .btn_next {
+  margin-top: 60px;
+}
+
+/* line 3, ../sass/_questionAd3.scss */
+#questionAd3 .img {
+  margin-bottom: 0;
+}
+/* line 7, ../sass/_questionAd3.scss */
+#questionAd3 .img_container {
+  margin-top: 10px;
+}
+/* line 11, ../sass/_questionAd3.scss */
+#questionAd3 .row {
+  margin-bottom: 0;
+}
+/* line 15, ../sass/_questionAd3.scss */
+#questionAd3 textarea {
+  height: 150px;
+  background-color: #6E6E6E;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  text-align: left;
+}
+/* line 25, ../sass/_questionAd3.scss */
+#questionAd3 .btn_next {
+  margin-top: 60px;
 }
