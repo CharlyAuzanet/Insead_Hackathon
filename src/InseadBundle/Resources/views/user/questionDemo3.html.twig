@@ -6,20 +6,22 @@
     <div class="progress">
         <div class="determinate" style="width: 60%"></div>
     </div>
-{% endblock %}
-{% block body %}
-<h2>{{ question }}</h2>
-    {% for choice in question.choices %}
-        {{ choice.content }}
-    {% endfor %}
-{% endblock %}
+    {% endblock %}
+    {% block body %}
 
-{% block footer %}
+
+        <h2>{{ question }}</h2>
+        {{ form_start(form) }}
+        {{ form_widget(form) }}
+        {{ form_end(form) }}
+    {% endblock %}
+
+    {% block footer %}
     <div class="row footerDemo z-depth-3">
         <div class="col s12 ">
-            
+
             <div class="col s6 offset-s6 center-align">
-                <a href="{{ path('insead_questionDemo4') }}">
+                <a href="{{ path('insead_questionDemo3') }}">
                     <button class="btn pulse">Next
                     </button>
                 </a>
@@ -27,4 +29,14 @@
         </div>
     </div>
 </div>
+
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
 {% endblock %}

@@ -10,4 +10,12 @@ namespace InseadBundle\Repository;
  */
 class ChoicesRepository extends \Doctrine\ORM\EntityRepository
 {
+    public function getChoicesById($id)
+    {
+        $qb = $this->createQueryBuilder('c');
+        $qb->join('c.questions', 'q')
+            ->where('q.id = :id')
+            ->setParameter('id', $id);
+        return $qb;
+    }
 }

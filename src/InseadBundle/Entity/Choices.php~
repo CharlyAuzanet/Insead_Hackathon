@@ -7,6 +7,11 @@ namespace InseadBundle\Entity;
  */
 class Choices
 {
+    public function __toString()
+    {
+        return $this->content;
+    }
+
     /**
      * @var int
      */

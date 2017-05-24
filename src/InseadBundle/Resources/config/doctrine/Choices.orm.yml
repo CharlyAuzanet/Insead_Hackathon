@@ -12,4 +12,8 @@ InseadBundle\Entity\Choices:
         content:
             type: string
             length: 255
-    lifecycleCallbacks: {  }
+
+    manyToMany:
+        questions:
+            targetEntity: InseadBundle\Entity\Questions
+            mappedBy: choices

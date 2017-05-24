@@ -25,6 +25,7 @@ InseadBundle\Entity\Questions:
 
         choices:
             targetEntity: InseadBundle\Entity\Choices
+            inversedBy: questions
 
     manyToOne:
         parameters:

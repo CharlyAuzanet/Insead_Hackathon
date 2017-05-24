@@ -3,6 +3,7 @@
 namespace InseadBundle\Controller;
 
 use InseadBundle\Entity\Answer;
+use InseadBundle\Form\AnswerType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\HttpFoundation\Request;
 
@@ -12,95 +13,131 @@ class QuestionDemoController extends Controller
 
     public function questionDemo1Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer1', 'test');
-
         $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(1);
+        $question = $em->getRepository('InseadBundle:Questions')->findOneById(1);
 
-        return $this->render('InseadBundle:user:questionDemo1.html.twig', array(
+        $answer = new Answer();
+        $form = $this ->createForm(AnswerType::class, $answer, array(
+            'idQuestion' => 1,
             'question' => $question
         ));
-    }
 
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($answer);
+            $em->flush();
+
+            return $this->redirectToRoute('insead_questionDemo2');
+        }
+
+        return $this->render('InseadBundle:user:questionDemo1.html.twig', array(
+            'question' => $question,
+            'form' => $form->createView()
+        ));
+    }
     public function questionDemo2Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer2', 'test');
-        
         $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(2);
+        $question = $em->getRepository('InseadBundle:Questions')->findOneById(2);
+
+        $answer = new Answer();
+        $form = $this ->createForm(AnswerType::class, $answer, array(
+            'idQuestion' => 2,
+            'question' => $question
+        ));
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($answer);
+            $em->flush();
+
+            return $this->redirectToRoute('insead_questionDemo3');
+        }
 
         return $this->render('InseadBundle:user:questionDemo2.html.twig', array(
-            'question' => $question
+            'question' => $question,
+            'form' => $form->createView()
         ));
     }
 
     public function questionDemo3Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer3', 'test');
-        
         $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(3);
+        $question = $em->getRepository('InseadBundle:Questions')->findOneById(3);
+
+        $answer = new Answer();
+        $form = $this ->createForm(AnswerType::class, $answer, array(
+            'idQuestion' => 3,
+            'question' => $question
+        ));
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($answer);
+            $em->flush();
+
+            return $this->redirectToRoute('insead_questionDemo4');
+        }
 
         return $this->render('InseadBundle:user:questionDemo3.html.twig', array(
-            'question' => $question
+            'question' => $question,
+            'form' => $form->createView()
         ));
     }
 
     public function questionDemo4Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer4', 'test');
-        
         $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(4);
+        $question = $em->getRepository('InseadBundle:Questions')->findOneById(4);
+
+        $answer = new Answer();
+        $form = $this ->createForm(AnswerType::class, $answer, array(
+            'idQuestion' => 4,
+            'question' => $question
+        ));
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($answer);
+            $em->flush();
+
+            return $this->redirectToRoute('insead_questionDemo5');
+        }
 
         return $this->render('InseadBundle:user:questionDemo4.html.twig', array(
-            'question' => $question
+            'question' => $question,
+            'form' => $form->createView()
         ));
     }
-
     public function questionDemo5Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer5', 'test');
-        
         $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(5);
+        $question = $em->getRepository('InseadBundle:Questions')->findOneById(5);
 
-        return $this->render('InseadBundle:user:questionDemo5.html.twig', array(
+        $answer = new Answer();
+        $form = $this ->createForm(AnswerType::class, $answer, array(
+            'idQuestion' => 5,
             'question' => $question
         ));
+
+        $form->handleRequest($request);
+        if ($form->isSubmitted() && $form->isValid()) {
+            $em = $this->getDoctrine()->getManager();
+            $em->persist($answer);
+            $em->flush();
+
+            return $this->redirectToRoute('fos_user_registration_register');
+        }
+
+        return $this->render('InseadBundle:user:questionDemo5.html.twig', array(
+            'question' => $question,
+            'form' => $form->createView()
+        ));
     }
-    public function validerAction(Request $request)
-    {
-        $em = $this->getDoctrine()->getManager();
-        $session = $request->getSession();
 
-        $answer = new Answer();
-        $answer->set($session->get('answer1'));
-        $answer = new Answer();
-        $answer->set($session->get('answer2'));
-        $answer = new Answer();
-        $answer->set($session->get('answer3'));
-        $answer = new Answer();
-        $answer->set($session->get('answer4'));
-        $answer = new Answer();
-        $answer->set($session->get('answer5'));
-
-
-        $em->persist($answer);
-        $em->flush();
-
-        $session->remove('answer1');
-        $session->remove('answer2');
-        $session->remove('answer3');
-        $session->remove('answer4');
-        $session->remove('answer5');
-
-        return $this->redirectToRoute('fos_user_registration_register');
-    }
 
 }

@@ -56,4 +56,50 @@ class Choices
     {
         return $this->content;
     }
+    /**
+     * @var \Doctrine\Common\Collections\Collection
+     */
+    private $questions;
+
+    /**
+     * Constructor
+     */
+    public function __construct()
+    {
+        $this->questions = new \Doctrine\Common\Collections\ArrayCollection();
+    }
+
+    /**
+     * Add question
+     *
+     * @param \InseadBundle\Entity\Questions $question
+     *
+     * @return Choices
+     */
+    public function addQuestion(\InseadBundle\Entity\Questions $question)
+    {
+        $this->questions[] = $question;
+
+        return $this;
+    }
+
+    /**
+     * Remove question
+     *
+     * @param \InseadBundle\Entity\Questions $question
+     */
+    public function removeQuestion(\InseadBundle\Entity\Questions $question)
+    {
+        $this->questions->removeElement($question);
+    }
+
+    /**
+     * Get questions
+     *
+     * @return \Doctrine\Common\Collections\Collection
+     */
+    public function getQuestions()
+    {
+        return $this->questions;
+    }
 }

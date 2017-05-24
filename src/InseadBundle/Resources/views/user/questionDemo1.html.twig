@@ -9,11 +9,11 @@
 {% endblock %}
 {% block body %}
 
-<h2>{{ question }}</h2>
-    {% for choice in question.choices %}
 
-        {{ choice.content }}
-    {% endfor %}
+<h2>{{ question }}</h2>
+    {{ form_start(form) }}
+    {{ form_widget(form) }}
+    {{ form_end(form) }}
 {% endblock %}
 
 {% block footer %}
@@ -30,4 +30,13 @@
     </div>
 </div>
 
+{% endblock %}
+
+{% block javascripts %}
+    {{ parent() }}
+    <script>
+        $(document).ready(function() {
+            $('select').material_select();
+        });
+    </script>
 {% endblock %}

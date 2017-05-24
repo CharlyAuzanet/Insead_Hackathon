@@ -68,4 +68,33 @@ class Answer
     {
         return $this->questions;
     }
+    /**
+     * @var \InseadBundle\Entity\Choices
+     */
+    private $choices;
+
+
+    /**
+     * Set choices
+     *
+     * @param \InseadBundle\Entity\Choices $choices
+     *
+     * @return Answer
+     */
+    public function setChoices(\InseadBundle\Entity\Choices $choices = null)
+    {
+        $this->choices = $choices;
+
+        return $this;
+    }
+
+    /**
+     * Get choices
+     *
+     * @return \InseadBundle\Entity\Choices
+     */
+    public function getChoices()
+    {
+        return $this->choices;
+    }
 }
