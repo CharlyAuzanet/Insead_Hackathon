@@ -29,14 +29,17 @@ class AnswerType extends AbstractType
             ))
             ->add('choices', EntityType::class, array(
                 'class' => 'InseadBundle\Entity\Choices',
+                'attr' => array(
+                    'class' => 'checkbox'
+                ),
                 'query_builder' => function(ChoicesRepository $qr) {
                     return $qr->getChoicesById($this->idQuestion);
                 },
                 'expanded' => true,
-                'multiple' => false
+                'multiple' => true
 
             ))
-            ->add('save', SubmitType::class);
+            ->add('Next', SubmitType::class);
 
     }
     /**

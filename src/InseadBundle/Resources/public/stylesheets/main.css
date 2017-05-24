@@ -45,6 +45,18 @@ h3 {
   bottom: 0;
   margin: 0;
 }
+/* line 23, ../sass/_questionDemo1.scss */
+#q1 .checkbox input[type="checkbox"] + label:before {
+  border: 2px solid white;
+  background: transparent;
+}
+/* line 27, ../sass/_questionDemo1.scss */
+#q1 .checkbox input[type="checkbox"]:checked + label:before {
+  border: 2px solid transparent;
+  border-bottom: 2px solid yellow;
+  border-right: 2px solid yellow;
+  background: transparent;
+}
 
 /* line 4, ../sass/_rules.scss */
 #rules body {
