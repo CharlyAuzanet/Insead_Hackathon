@@ -12,7 +12,7 @@ class QuestionDemoController extends Controller
 
     public function questionDemo1Action(Request $request)
     {
-        $session = $request->getSession();
+        /*$session = $request->getSession();
         $session->set('answer1', 'test');
 
         $em = $this->getDoctrine()->getManager();
@@ -20,12 +20,13 @@ class QuestionDemoController extends Controller
 
         return $this->render('InseadBundle:user:questionDemo1.html.twig', array(
             'question' => $question
-        ));
+        ));*/
+        return $this->render('InseadBundle:user:questionDemo1.html.twig');
     }
 
     public function questionDemo2Action(Request $request)
     {
-        $session = $request->getSession();
+        /*$session = $request->getSession();
         $session->set('answer2', 'test');
         
         $em = $this->getDoctrine()->getManager();
@@ -33,12 +34,13 @@ class QuestionDemoController extends Controller
 
         return $this->render('InseadBundle:user:questionDemo2.html.twig', array(
             'question' => $question
-        ));
+        ));*/
+        return $this->render('InseadBundle:user:questionDemo2.html.twig');
     }
 
     public function questionDemo3Action(Request $request)
     {
-        $session = $request->getSession();
+        /*$session = $request->getSession();
         $session->set('answer3', 'test');
         
         $em = $this->getDoctrine()->getManager();
@@ -46,12 +48,13 @@ class QuestionDemoController extends Controller
 
         return $this->render('InseadBundle:user:questionDemo3.html.twig', array(
             'question' => $question
-        ));
+        ));*/
+        return $this->render('InseadBundle:user:questionDemo3.html.twig');
     }
 
     public function questionDemo4Action(Request $request)
     {
-        $session = $request->getSession();
+        /*$session = $request->getSession();
         $session->set('answer4', 'test');
         
         $em = $this->getDoctrine()->getManager();
@@ -59,22 +62,16 @@ class QuestionDemoController extends Controller
 
         return $this->render('InseadBundle:user:questionDemo4.html.twig', array(
             'question' => $question
-        ));
+        ));*/
+        return $this->render('InseadBundle:user:questionDemo4.html.twig');
     }
 
     public function questionDemo5Action(Request $request)
     {
-        $session = $request->getSession();
-        $session->set('answer5', 'test');
-        
-        $em = $this->getDoctrine()->getManager();
-        $question = $em->getRepository('InseadBundle:Questions')->getChoicesById(5);
 
-        return $this->render('InseadBundle:user:questionDemo5.html.twig', array(
-            'question' => $question
-        ));
+        return $this->render('InseadBundle:user:questionDemo5.html.twig');
     }
-    public function validerAction(Request $request)
+    /*public function validerAction(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
         $session = $request->getSession();
@@ -101,6 +98,6 @@ class QuestionDemoController extends Controller
         $session->remove('answer5');
 
         return $this->redirectToRoute('fos_user_registration_register');
-    }
+    }*/
 
 }

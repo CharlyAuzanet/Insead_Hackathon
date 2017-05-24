@@ -1,43 +1,73 @@
-/* line 4, ../sass/_global.scss */
+/* line 6, ../sass/_global.scss */
 img {
   width: 100%;
 }
 
-/* line 8, ../sass/_global.scss */
+/* line 10, ../sass/_global.scss */
 h1 {
   font-size: 3em;
 }
 
-/* line 11, ../sass/_global.scss */
+/* line 13, ../sass/_global.scss */
 h2 {
   font-size: 2em;
 }
 
-/* line 14, ../sass/_global.scss */
+/* line 16, ../sass/_global.scss */
 h3 {
   font-size: 1.5em;
 }
 
-/* line 17, ../sass/_global.scss */
+/* line 19, ../sass/_global.scss */
 .material-icons {
   font-size: 50px;
 }
 
-/* line 3, ../sass/_questionDemo1.scss */
-#q1 .headerDemo {
+/* line 22, ../sass/_global.scss */
+html {
+  font-family: 'PT Serif Caption', serif;
+}
+
+/* line 25, ../sass/_global.scss */
+.body_questions {
+  background-color: #40c4ff;
+  height: 70vh;
+}
+
+/* line 4, ../sass/_register.scss */
+#register html {
+  font-size: large;
+}
+/* line 8, ../sass/_register.scss */
+#register .btn_register {
+  margin-top: 30px;
+}
+/* line 12, ../sass/_register.scss */
+#register .form_register, #register p {
+  margin-top: 60px;
+  font-size: large;
+  color: #039be5;
+}
+/* line 19, ../sass/_register.scss */
+#register .form {
+  padding: 0;
+}
+
+/* line 4, ../sass/_layout.scss */
+#layout .headerDemo {
   background-color: #039be5;
 }
-/* line 7, ../sass/_questionDemo1.scss */
-#q1 .progress {
+/* line 9, ../sass/_layout.scss */
+#layout .progress {
   margin: 0;
   background: #0288d1;
 }
-/* line 11, ../sass/_questionDemo1.scss */
-#q1 .progress .determinate {
+/* line 14, ../sass/_layout.scss */
+#layout .progress .determinate {
   background-color: #039be5;
 }
-/* line 15, ../sass/_questionDemo1.scss */
-#q1 .footerDemo {
+/* line 19, ../sass/_layout.scss */
+#layout .footerDemo {
   background-color: #039be5;
   padding: 20px;
   position: fixed;
@@ -45,33 +75,49 @@ h3 {
   bottom: 0;
   margin: 0;
 }
+/* line 27, ../sass/_layout.scss */
+#layout h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: left;
+}
 
 /* line 4, ../sass/_rules.scss */
 #rules body {
   height: 100vh;
   width: 100%;
 }
-/* line 10, ../sass/_rules.scss */
-#rules .content_rules {
-  margin-top: 50px;
+/* line 9, ../sass/_rules.scss */
+#rules h2 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5em;
 }
 /* line 14, ../sass/_rules.scss */
-#rules .title_rules {
-  margin-top: 60px;
+#rules .content_rules {
+  background-color: #0088CC;
+  margin-top: 15px;
+  margin-bottom: 20px;
 }
-/* line 20, ../sass/_rules.scss */
+/* line 21, ../sass/_rules.scss */
+#rules .title_rules {
+  margin-top: 20px;
+}
+/* line 26, ../sass/_rules.scss */
 #rules .rules {
   height: 100vh;
   margin-bottom: 0;
 }
-/* line 27, ../sass/_rules.scss */
-#rules p {
-  font-size: x-large;
-  line-height: 50px;
-}
 /* line 33, ../sass/_rules.scss */
+#rules p {
+  font-size: medium;
+  line-height: 30px;
+  color: white;
+}
+/* line 40, ../sass/_rules.scss */
 #rules .btn_begin {
-  margin-top: 60px;
+  margin-top: 15%;
 }
 
 /* line 3, ../sass/_login.scss */

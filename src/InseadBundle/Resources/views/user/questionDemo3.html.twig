@@ -8,23 +8,29 @@
     </div>
 {% endblock %}
 {% block body %}
-<h2>{{ question }}</h2>
+{#<h2>{{ question }}</h2>
     {% for choice in question.choices %}
         {{ choice.content }}
-    {% endfor %}
+    {% endfor %}#}
 {% endblock %}
-
-{% block footer %}
+	
+	{% block footer %}
     <div class="row footerDemo z-depth-3">
-        <div class="col s12 ">
-            
-            <div class="col s6 offset-s6 center-align">
+      
+            <div class="col s4 offset-s1 center-align">
+                <a href="{{ path('insead_questionDemo2') }}">
+                    <button class="btn pulse">Return
+                    </button>
+                </a>
+            </div>
+            <div class="col s4 offset-s1 center-align">
                 <a href="{{ path('insead_questionDemo4') }}">
                     <button class="btn pulse">Next
                     </button>
                 </a>
             </div>
         </div>
-    </div>
+   
 </div>
+
 {% endblock %}

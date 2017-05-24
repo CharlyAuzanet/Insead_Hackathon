@@ -3,31 +3,40 @@
 
 {% block progress %}
 <div id="q1">
-    <div class="progress">
-        <div class="determinate" style="width: 20%"></div>
-    </div>
-{% endblock %}
-{% block body %}
+        <div class="progress">
+            <div class="determinate" style="width: 20%"></div>
+        </div>
+    {% endblock %}
+    {% block body %}
+        <div class="row body_questions">
+            <div class="col s12">
 
-<h2>{{ question }}</h2>
+{#<h2>{{ question }}</h2>
     {% for choice in question.choices %}
 
         {{ choice.content }}
-    {% endfor %}
-{% endblock %}
-
-{% block footer %}
-    <div class="row footerDemo z-depth-3">
-        <div class="col s12 ">
-            
-            <div class="col s6 offset-s6 center-align">
-                <a href="{{ path('insead_questionDemo2') }}">
-                    <button class="btn pulse">Next
-                    </button>
-                </a>
-            </div>
+    {% endfor %}#}
         </div>
     </div>
+    {% endblock %}
+    
+    {% block footer %}
+        <div class="row footerDemo z-depth-3">
+                <div class="col s4 offset-s1 center-align">
+                    <a href="{{ path('insead_rules') }}">
+                        <button class="btn pulse">Return
+                        </button>
+                    </a>
+                </div>
+                    <div class="col s4 offset-s1 center-align">
+                        <a href="{{ path('insead_questionDemo2') }}">
+                            <button class="btn pulse">Next
+                            </button>
+                        </a>
+                    </div>
+        
+    </div>
 </div>
+
 
 {% endblock %}

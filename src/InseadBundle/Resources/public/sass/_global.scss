@@ -1,5 +1,7 @@
 $color1 : #0288d1;
 $color2 : #039be5;
+$color3 : #40c4ff;
+
 
 img {
   width: 100%;
@@ -16,5 +18,13 @@ h3 {
 }
 .material-icons {
   font-size: 50px;
+}
+html {
+  font-family: 'PT Serif Caption', serif;
+}
+.body_questions
+{
+  background-color: $color3;
+  height:70vh;
 }
 
