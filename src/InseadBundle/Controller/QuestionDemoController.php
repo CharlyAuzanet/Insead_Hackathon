@@ -9,8 +9,6 @@ use Symfony\Component\HttpFoundation\Request;
 
 class QuestionDemoController extends Controller
 {
-
-
     public function questionDemo1Action(Request $request)
     {
         $em = $this->getDoctrine()->getManager();
@@ -117,7 +115,6 @@ class QuestionDemoController extends Controller
     {
         $em = $this->getDoctrine()->getManager();
         $question = $em->getRepository('InseadBundle:Questions')->findOneById(5);
-
         $answer = new Answer();
         $form = $this ->createForm(AnswerType::class, $answer, array(
             'idQuestion' => 5,
@@ -138,6 +135,5 @@ class QuestionDemoController extends Controller
             'form' => $form->createView()
         ));
     }
-
-
 }
+

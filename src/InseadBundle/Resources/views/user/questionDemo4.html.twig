@@ -8,27 +8,35 @@
     </div>
     {% endblock %}
     {% block body %}
-
-
-        <h2>{{ question }}</h2>
-        {{ form_start(form) }}
-        {{ form_widget(form) }}
-        {{ form_end(form) }}
+        <div class="row body_questions">
+            <div class="col s12">
+                <h2>{{ question }}</h2>
+                    {{ form_start(form) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+            </div>
+        </div>
+        
     {% endblock %}
-
-    {% block footer %}
+    
+	{% block footer %}
     <div class="row footerDemo z-depth-3">
-        <div class="col s12 ">
-
-            <div class="col s6 offset-s6 center-align">
+            <div class="col s4 offset-s1 center-align">
                 <a href="{{ path('insead_questionDemo3') }}">
+                    <button class="btn pulse">Return
+                    </button>
+                </a>
+            </div>
+            <div class="col s4 offset-s1 center-align">
+                <a href="{{ path('insead_questionDemo5') }}">
                     <button class="btn pulse">Next
                     </button>
                 </a>
             </div>
-        </div>
     </div>
+    
 </div>
+
 
 {% endblock %}
 
@@ -39,4 +47,5 @@
             $('select').material_select();
         });
     </script>
+
 {% endblock %}

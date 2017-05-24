@@ -1,0 +1,34 @@
+@import "global";
+#layout
+{
+  .headerDemo
+  {
+    background-color: $color2;
+  }
+
+  .progress
+  {
+    margin: 0;
+    background: $color1;
+
+    .determinate
+    {
+      background-color: $color2;
+    }
+  }
+  .footerDemo {
+    background-color: $color2;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    margin: 0;
+  }
+
+  h1{
+    font-style: italic;
+    font-weight: bold;
+    font-size: 2.5em;
+    text-align: left;
+  }
+}
