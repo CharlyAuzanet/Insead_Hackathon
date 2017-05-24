@@ -1,19 +1,19 @@
 @import "global";
 #q1 {
   .headerDemo {
-    background-color: $colorRed;
+    background-color: $color2;
   }
 
   .progress {
     margin: 0;
-    background: $colorBlue;
+    background: $color1;
 
     .determinate {
-      background-color: $colorRed;
+      background-color: $color2;
     }
   }
   .footerDemo {
-    background-color: $colorRed;
+    background-color: $color2;
     padding: 20px;
     position: fixed;
     width: 100%;
