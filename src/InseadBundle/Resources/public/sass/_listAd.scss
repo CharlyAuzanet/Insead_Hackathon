@@ -1,0 +1,20 @@
+@import "global";
+#listad {
+  .headerAd {
+    background-color: $colorBlue;
+  }
+  .adBox {
+    background-color: $colorRed;
+  }
+  a {
+    color: $colorBlue;
+  }
+  .footerAd {
+    background-color: $colorRed;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-top: 20px;
+    margin: 0;
+  }
+}

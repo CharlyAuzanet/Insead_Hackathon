@@ -24,3 +24,7 @@ insead_rules:
     path:     /rules
     defaults: { _controller: InseadBundle:Default:rules }
 
+insead_adList:
+    path: /adlist
+    defaults: { _controller: InseadBundle:Default:adlist }
+

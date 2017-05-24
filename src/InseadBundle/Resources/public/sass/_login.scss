@@ -1,9 +1,10 @@
 @import "global";
-
-.row_login {
-  background-color: grey;
-  height: 90vh;
+#log {
+  .row_login {
+    background-color: $colorRed;
+    height: 90vh;
   }
   .logo {
     margin-top: 15px;
   }
+}

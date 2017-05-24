@@ -14,5 +14,14 @@ class DefaultController extends Controller
     {
         return $this->render('InseadBundle:user:rules.html.twig');
     }
+    public function adlistAction()
+    {
+        $em = $this->getDoctrine()->getManager();
+        $ads = $em->getRepository('InseadBundle:Ad')->findAll();
+
+        return $this->render('@Insead/user/listAd.html.twig', array(
+            'ads' => $ads
+        ));
+    }
 
 }

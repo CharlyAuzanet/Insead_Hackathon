@@ -1,31 +1,49 @@
-/* line 2, ../sass/_questionDemo1.scss */
-.headerDemo {
-  background-color: red;
+/* line 4, ../sass/_global.scss */
+img {
+  width: 100%;
 }
 
-/* line 6, ../sass/_questionDemo1.scss */
-.progress {
+/* line 8, ../sass/_global.scss */
+h1 {
+  font-size: 3em;
+}
+
+/* line 11, ../sass/_global.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 14, ../sass/_global.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/* line 17, ../sass/_global.scss */
+.material-icons {
+  font-size: 50px;
+}
+
+/* line 3, ../sass/_questionDemo1.scss */
+#q1 .headerDemo {
+  background-color: Red;
+}
+/* line 7, ../sass/_questionDemo1.scss */
+#q1 .progress {
   margin: 0;
-  background: blue;
+  background: Blue;
 }
-/* line 10, ../sass/_questionDemo1.scss */
-.progress .determinate {
-  background-color: green;
+/* line 11, ../sass/_questionDemo1.scss */
+#q1 .progress .determinate {
+  background-color: Red;
 }
-
-/* line 14, ../sass/_questionDemo1.scss */
-.footerDemo {
-  background-color: red;
+/* line 15, ../sass/_questionDemo1.scss */
+#q1 .footerDemo {
+  background-color: Red;
   padding: 20px;
   position: fixed;
   width: 100%;
   bottom: 0;
   margin: 0;
-}
-
-/* line 4, ../sass/_global.scss */
-img {
-  width: 100%;
 }
 
 /* line 4, ../sass/rules.scss */
@@ -57,12 +75,33 @@ img {
 }
 
 /* line 3, ../sass/_login.scss */
-.row_login {
-  background-color: grey;
+#log .row_login {
+  background-color: Red;
   height: 90vh;
 }
-
 /* line 7, ../sass/_login.scss */
-.logo {
+#log .logo {
   margin-top: 15px;
+}
+
+/* line 3, ../sass/_listAd.scss */
+#listad .headerAd {
+  background-color: Blue;
+}
+/* line 6, ../sass/_listAd.scss */
+#listad .adBox {
+  background-color: Red;
+}
+/* line 9, ../sass/_listAd.scss */
+#listad a {
+  color: Blue;
+}
+/* line 12, ../sass/_listAd.scss */
+#listad .footerAd {
+  background-color: Red;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  margin: 0;
 }
