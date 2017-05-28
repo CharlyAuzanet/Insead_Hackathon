@@ -151,12 +151,61 @@ html {
 
 /* line 3, ../sass/_login.scss */
 #log .row_login {
-  background-color: #0288d1;
+  background-color: #039be5;
   height: 90vh;
+  border-radius: 5px;
 }
-/* line 7, ../sass/_login.scss */
-#log .logo {
+/* line 8, ../sass/_login.scss */
+#log .logo, #log img {
   margin-top: 15px;
+  border-radius: 5px;
+}
+/* line 12, ../sass/_login.scss */
+#log .logo {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+/* line 17, ../sass/_login.scss */
+#log input, #log label {
+  color: white;
+  font-size: 1.2em;
+}
+/* line 21, ../sass/_login.scss */
+#log #password, #log #username {
+  border-bottom: 1px solid white;
+}
+/* line 25, ../sass/_login.scss */
+#log .subscribe, #log .submit {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 32, ../sass/_login.scss */
+#log .checkbox input[type="checkbox"] + label:before {
+  border: 2px solid white;
+  background: transparent;
+}
+/* line 36, ../sass/_login.scss */
+#log .checkbox input[type="checkbox"]:checked + label:before {
+  border: 2px solid transparent;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent;
+}
+/* line 42, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"] + label:after {
+  border: 2px solid white;
+  background: transparent;
+}
+/* line 46, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"]:checked + label:after {
+  background: white;
+}
+/* line 49, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"]:checked + label:before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
 }
 
 /* line 3, ../sass/_listAd.scss */
@@ -181,6 +230,13 @@ html {
   margin: 0;
 }
 
+/* line 1, ../sass/_adVideo.scss */
+#adVideo {
+  /*.ind_100
+  {
+    margin-left: 30%;
+  }*/
+}
 /* line 4, ../sass/_adVideo.scss */
 #adVideo .video-container {
   margin-top: 10px;
@@ -201,10 +257,6 @@ html {
 /* line 25, ../sass/_adVideo.scss */
 #adVideo .indice, #adVideo p {
   margin-bottom: 0;
-}
-/* line 30, ../sass/_adVideo.scss */
-#adVideo .ind_100 {
-  margin-left: 30%;
 }
 /* line 35, ../sass/_adVideo.scss */
 #adVideo .btn_next {

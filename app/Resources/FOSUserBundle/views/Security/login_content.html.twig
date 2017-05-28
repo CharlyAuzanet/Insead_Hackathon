@@ -16,9 +16,6 @@
             <div class="col s6 offset-s3 logo">
                 <img class="z-depth-3" src="https://vignette3.wikia.nocookie.net/uncyclopedia/images/4/4c/Striped_apple_logo.png/revision/latest?cb=20090104011038">
             </div>
-            <div class="col s6 offset-s3 login">
-                <p>Login :</p>
-            </div>
             <div class="col s8 offset-s2 username">
                 <label for="username">{{ 'security.login.username'|trans }}</label>
                 <input type="text" id="username" name="_username" value="{{ last_username }}" required="required" />
@@ -31,11 +28,11 @@
                 <input type="checkbox" id="remember_me" name="_remember_me" value="on" />
                 <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
             </div>
-            <div class="col s8 offset-s2 submit">
-                <input type="submit" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+            <div class="col s12 submit">
+                <input type="submit" class="btn" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
             </div>
 </form>
-            <div class="col s8 offset-s2">
+            <div class="col s12 subscribe">
                 <a href="{{ path('insead_rules') }}" ><button class="button btn">Subscribe</button></a>
             </div>
 
