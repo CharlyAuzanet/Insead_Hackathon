@@ -6,7 +6,7 @@
     <div>{{ error.messageKey|trans(error.messageData, 'security') }}</div>
 {% endif %}
     <div class="row ">
-        <div class="col s10 offset-s1 row_login">
+        <div class="col s10 offset-s1 z-depth-5 row_login">
 <form action="{{ path("fos_user_security_check") }}" method="post">
     {% if csrf_token %}
         <input type="hidden" name="_csrf_token" value="{{ csrf_token }}" />
@@ -14,7 +14,7 @@
 
 
             <div class="col s6 offset-s3 logo">
-                <img src="https://image.freepik.com/icones-gratuites/logo-de-pomme_318-40184.jpg">
+                <img class="z-depth-3" src="https://vignette3.wikia.nocookie.net/uncyclopedia/images/4/4c/Striped_apple_logo.png/revision/latest?cb=20090104011038">
             </div>
             <div class="col s6 offset-s3 login">
                 <p>Login :</p>

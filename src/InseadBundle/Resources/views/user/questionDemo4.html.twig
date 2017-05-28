@@ -11,33 +11,31 @@
         <div class="row body_questions">
             <div class="col s12">
                 <h2>{{ question }}</h2>
-                    {{ form_start(form) }}
-                    {{ form_widget(form) }}
-                    {{ form_end(form) }}
+                {{ form_start(form) }}
+                <div class="row">
+                    <div class="col s10 offset-s1">
+                        <h2>{{ form_widget(form.choices) }}</h2>
+                    </div>
+                </div>
             </div>
         </div>
-        
     {% endblock %}
     
 	{% block footer %}
     <div class="row footerDemo z-depth-3">
-            <div class="col s4 offset-s1 center-align">
-                <a href="{{ path('insead_questionDemo3') }}">
-                    <button class="btn pulse">Return
-                    </button>
-                </a>
-            </div>
-            <div class="col s4 offset-s1 center-align">
-                <a href="{{ path('insead_questionDemo5') }}">
-                    <button class="btn pulse">Next
-                    </button>
-                </a>
-            </div>
+        <div class="col s4 offset-s1 center-align">
+            <a href="{{ path('insead_rules') }}">
+                <button class="btn pulse">Return
+                </button>
+            </a>
+        </div>
+        <div class="col s4 offset-s1 center-align">
+            {{ form_widget(form) }}
+            <button class="btn pulse" type="submit" value="Next">Next</button>
+        </div>
+        {{ form_end(form) }}
     </div>
-    
 </div>
-
-
 {% endblock %}
 
 {% block javascripts %}

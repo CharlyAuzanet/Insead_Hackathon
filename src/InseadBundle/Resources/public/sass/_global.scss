@@ -1,6 +1,6 @@
-$color1 : #0288d1;
-$color2 : #039be5;
-$color3 : #40c4ff;
+$color1 : #0288d1; //Foncé
+$color2 : #039be5; //Moyen
+$color3 : #40c4ff; //Clair
 
 
 img {
@@ -26,5 +26,8 @@ html {
 {
   background-color: $color3;
   height:70vh;
+}
+.btn {
+  background-color: $color3;
 }
 

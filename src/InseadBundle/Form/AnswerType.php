@@ -30,16 +30,16 @@ class AnswerType extends AbstractType
             ->add('choices', EntityType::class, array(
                 'class' => 'InseadBundle\Entity\Choices',
                 'attr' => array(
-                    'class' => 'checkbox'
+                    'class' => 'radio'
                 ),
                 'query_builder' => function(ChoicesRepository $qr) {
                     return $qr->getChoicesById($this->idQuestion);
                 },
                 'expanded' => true,
-                'multiple' => true
+                'multiple' => false
 
-            ))
-            ->add('Next', SubmitType::class);
+            ));
+
 
     }
     /**

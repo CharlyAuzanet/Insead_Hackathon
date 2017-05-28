@@ -34,6 +34,11 @@ html {
   height: 70vh;
 }
 
+/* line 30, ../sass/_global.scss */
+.btn {
+  background-color: #40c4ff;
+}
+
 /* line 4, ../sass/_register.scss */
 #register html {
   font-size: large;
@@ -54,20 +59,20 @@ html {
 }
 
 /* line 4, ../sass/_layout.scss */
-#layout .headerDemo {
+#q1 .headerDemo {
   background-color: #039be5;
 }
 /* line 9, ../sass/_layout.scss */
-#layout .progress {
+#q1 .progress {
   margin: 0;
-  background: #0288d1;
+  background: #0277bd;
 }
 /* line 14, ../sass/_layout.scss */
-#layout .progress .determinate {
-  background-color: #039be5;
+#q1 .progress .determinate {
+  background-color: #01579b;
 }
 /* line 19, ../sass/_layout.scss */
-#layout .footerDemo {
+#q1 .footerDemo {
   background-color: #039be5;
   padding: 20px;
   position: fixed;
@@ -76,11 +81,35 @@ html {
   margin: 0;
 }
 /* line 28, ../sass/_layout.scss */
-#layout h1 {
+#q1 h1 {
   font-style: italic;
   font-weight: bold;
   font-size: 2.5em;
   text-align: left;
+}
+/* line 37, ../sass/_layout.scss */
+#q1 .radio input[type="radio"] + label:before {
+  border: 2px solid grey;
+  background: transparent;
+  transform: scale(2);
+}
+/* line 43, ../sass/_layout.scss */
+#q1 .radio input[type="radio"]:checked + label:before {
+  border: 2px solid transparent;
+  background: white;
+  transform: scale(2);
+}
+/* line 50, ../sass/_layout.scss */
+#q1 .radio input[type="radio"]:checked + label:after {
+  border: 2px solid black;
+  background: #0288d1;
+  transform: scale(2);
+}
+/* line 57, ../sass/_layout.scss */
+#q1 .radio .required {
+  color: white;
+  font-size: 1.2em;
+  margin: 20px;
 }
 
 /* line 4, ../sass/_rules.scss */
@@ -122,7 +151,7 @@ html {
 
 /* line 3, ../sass/_login.scss */
 #log .row_login {
-  background-color: #039be5;
+  background-color: #0288d1;
   height: 90vh;
 }
 /* line 7, ../sass/_login.scss */
