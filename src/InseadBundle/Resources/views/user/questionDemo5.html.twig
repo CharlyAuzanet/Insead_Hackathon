@@ -18,21 +18,55 @@
                     </div>
                 </div>
             </div>
+            <div class="row number">
+                <div class="col s3">
+                      <a class="btn-floating btn-large waves-effect waves-light choice_number">0</a>
+                </div>
+                    <div class="col s3">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">1</a>
+                    </div>
+                    <div class="col s3">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">2</a>
+                    </div>
+                    <div class="col s3">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">3</a>
+                    </div>
+                    <div class="col s2 offset-s1">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">4</a>
+                    </div>
+                    <div class="col s2 offset-s1">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">5</a>
+                    </div>
+                    <div class="col s2 offset-s1">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">6</a>
+                    </div>
+                    <div class="col s2 offset-s1">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">7</a>
+                    </div>
+                    <div class="col s3 offset-s2">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">8</a>
+                    </div>
+                    <div class="col s3 offset-s2">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">9</a>
+                    </div>
+                    <div class="col s3 offset-s2">
+                            <a class="btn-floating btn-large waves-effect waves-light choice_number">10+</a>
+                    </div>
         </div>
     {% endblock %}
 
     {% block footer %}
     <div class="row footerDemo z-depth-3">
         <div class="col s4 offset-s1 center-align">
-            <a href="{{ path('insead_rules') }}">
+            <a href="{{ path('insead_questionDemo4') }}">
                 <button class="btn">Return
                 </button>
             </a>
         </div>
         <div class="col s4 offset-s1 center-align">
-            {{ form_widget(form) }}
+          <a href="{{ path('fos_user_registration_register') }}">
             <button class="btn pulse" type="submit" value="Next">Next</button>
-        </div>
+            </a>
         {{ form_end(form) }}
     </div>
 </div>

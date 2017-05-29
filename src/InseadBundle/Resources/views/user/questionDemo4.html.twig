@@ -17,8 +17,21 @@
                         <h2>{{ form_widget(form.choices) }}</h2>
                     </div>
                 </div>
+                <div class="row choices">
+                    <div class="col s3 offset-s2">
+                            <a class="btn-floating btn-large waves-effect waves-light test_btn"><i class="material-icons">check_circle</i></a>
+                    </div>
+                        <div class="col s3">
+                            <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">clear</i></a>
+                        </div>
+                        <div class="col s3">
+                             <a class="btn-floating btn-large waves-effect waves-light blue"><i class="material-icons">not_interested</i></a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+        
     {% endblock %}
     
 	{% block footer %}

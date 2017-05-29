@@ -330,3 +330,23 @@ html {
 #questionAd3 .btn_next {
   margin-top: 60px;
 }
+
+/* line 1, ../sass/_questionDemo4.scss */
+.test a {
+  width: 100%;
+}
+
+/* line 7, ../sass/_questionDemo4.scss */
+.test_btn {
+  width: 90px;
+  background-color: yellow;
+  border: none;
+  cursor: pointer;
+}
+
+/* line 14, ../sass/_questionDemo4.scss */
+.test_btn:hover {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
