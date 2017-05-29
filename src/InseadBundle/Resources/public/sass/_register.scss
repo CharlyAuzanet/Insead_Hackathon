@@ -1,22 +1,44 @@
 @import "global";
 #register
 {
-  html{
-    font-size: large;
 
-  }
-  .btn_register
-  {
-    margin-top: 30px;
-  }
-  .form_register,p
-  {
-    margin-top: 60px;
-    font-size: large;
-    color: $color2;
-
+  .form_register {
+    margin-top: 50px;
+    padding: 20px;
   }
   .form{
     padding: 0;
+    color: $color2;
   }
+  .text {
+    margin-bottom: 20px;
+  }
+  .btn_register {
+    text-align: center;
+    margin-top: 50px;
+  }
+  p {
+    font-size: 1.1em;
+    text-align: center;
+    color: $color1;
+    font-family: 'PT Serif Caption' ;
+  }
+
+  .required.active {
+    color : $color1;
+    font-family: 'PT Serif Caption';
+    font-size: 1.3em;
+
+
+  }
+
+  .required {
+    color : $color2;
+    font-family: 'PT Serif Caption' ;
+
+  }
+  #fos_user_registration_form_email, #fos_user_registration_form_username, #fos_user_registration_form_plainPassword_first, #fos_user_registration_form_plainPassword_second {
+    border-bottom: 1px solid $color2;
+  }
+
 }

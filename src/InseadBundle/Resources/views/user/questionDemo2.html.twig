@@ -3,6 +3,7 @@
 
 {% block progress %}
 <div id="q1">
+    <div id="q2">
     <div class="progress">
         <div class="determinate" style="width: 40%"></div>
     </div>
@@ -11,12 +12,30 @@
         <div class="row body_questions z-depth-3">
             <div class="col s12">
                 <h2>{{ question }}</h2>
-                {{ form_start(form) }}
-                <div class="row">
-                    <div class="col s10 offset-s1">
-                        <h2>{{ form_widget(form.choices) }}</h2>
+            </div>
+            <div class="col s12">
+                <form action="#">
+                    <p class="range-field" >
+                        $<output  id="output" for="rangeInput">15000</output> <!-- Just to display selected value -->
+                    <div class="container">
+                        <input type="range" min="0" max="100000" value="500" step="1" list="tickmarks" id="rangeInput" oninput="output.value = rangeInput.value">
+                        <datalist id="tickmarks">
+                            <option value="0 to 20">0</option>
+                            <option>5000</option>
+                            <option>10000</option>
+                            <option>20000</option>
+                            <option>30000</option>
+                            <option>40000</option>
+                            <option>50000</option>
+                            <option>60000</option>
+                            <option>70000</option>
+                            <option>80000</option>
+                            <option>90000</option>
+                            <option>100000</option>
+                        </datalist>
                     </div>
-                </div>
+                    </p>
+                </form>
             </div>
         </div>
     {% endblock %}
@@ -30,10 +49,9 @@
             </a>
         </div>
         <div class="col s4 offset-s1 center-align">
-            {{ form_widget(form) }}
-            <button class="btn pulse" type="submit" value="Next">Next</button>
+            <a href="{{ path('insead_questionDemo3') }}"><button class="btn pulse" type="submit" value="Next">Next</button></a>
         </div>
-        {{ form_end(form) }}
+    </div>
     </div>
 </div>
 {% endblock %}

@@ -25,7 +25,7 @@ class LoadDateQuestions extends LoadDataParameters implements FixtureInterface
 
         $q4 = new Questions();
         $q4->setParameters($this->getReference('demo'));
-        $q4->setTitle("Which of the following best describes your race ?");
+        $q4->setTitle("Are you the primary grocery shopper for your household ?");
 
         $q5 = new Questions();
         $q5->setParameters($this->getReference('demo'));

@@ -2,20 +2,24 @@
 {% extends 'base.html.twig' %}
     {% block body %}
         <div id="register">
-            <div class="row form_register">
-                <div class="col s10 offset-s1 form">
-            {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
-                {{ form_widget(form) }}
-                    <div class="row btn_register">
-                        <div class="col s12">
-                            <button class="btn pulse" type="submit"  value="{{ 'registration.submit'|trans }}"
-                                <i class="material-icons right">Register</i>
-                            </button>
-                        </div>
-                    </div>
-            {{ form_end(form) }}
+            <div class="row form_register z-depth-3">
+                <div class="col s10 offset-s1 text z-depth-1">
+                    <p>Add your information to complete your registration</p>
+                </div>
+                <div class="col s12 form">
+                    {{ form_start(form, {'method': 'post', 'action': path('fos_user_registration_register'), 'attr': {'class': 'fos_user_registration_register'}}) }}
+                    {{ form_widget(form) }}
+                    {{ form_end(form) }}
+                </div>
+            </div>
+            <div class="row btn_register">
+                <div class="col s12">
+                    <button class="btn pulse" type="submit"  value="{{ 'registration.submit'|trans }}"
+                    <i class="material-icons right">Register</i>
+                    </button>
                 </div>
             </div>
         </div>
+
     {% endblock %}
 

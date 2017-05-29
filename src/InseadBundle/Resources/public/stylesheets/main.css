@@ -33,23 +33,46 @@ html {
   background-color: #40c4ff;
 }
 
-/* line 4, ../sass/_register.scss */
-#register html {
-  font-size: large;
+/* line 5, ../sass/_register.scss */
+#register .form_register {
+  margin-top: 50px;
+  padding: 20px;
 }
-/* line 8, ../sass/_register.scss */
-#register .btn_register {
-  margin-top: 30px;
-}
-/* line 12, ../sass/_register.scss */
-#register .form_register, #register p {
-  margin-top: 60px;
-  font-size: large;
-  color: #039be5;
-}
-/* line 19, ../sass/_register.scss */
+/* line 9, ../sass/_register.scss */
 #register .form {
   padding: 0;
+  color: #039be5;
+}
+/* line 13, ../sass/_register.scss */
+#register .text {
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/_register.scss */
+#register .btn_register {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 20, ../sass/_register.scss */
+#register p {
+  font-size: 1.1em;
+  text-align: center;
+  color: #0288d1;
+  font-family: "PT Serif Caption";
+}
+/* line 27, ../sass/_register.scss */
+#register .required.active {
+  color: #0288d1;
+  font-family: 'PT Serif Caption';
+  font-size: 1.3em;
+}
+/* line 35, ../sass/_register.scss */
+#register .required {
+  color: #039be5;
+  font-family: "PT Serif Caption";
+}
+/* line 40, ../sass/_register.scss */
+#register #fos_user_registration_form_email, #register #fos_user_registration_form_username, #register #fos_user_registration_form_plainPassword_first, #register #fos_user_registration_form_plainPassword_second {
+  border-bottom: 1px solid #039be5;
 }
 
 /* line 4, ../sass/_layout.scss */
@@ -80,35 +103,38 @@ html {
   font-weight: bold;
   font-size: 2.5em;
   text-align: left;
+  color: white;
+  text-shadow: 10px 5px 10px  black;
 }
-/* line 37, ../sass/_layout.scss */
+/* line 39, ../sass/_layout.scss */
 #q1 .radio input[type="radio"] + label:before {
   border: 2px solid grey;
   background: transparent;
   transform: scale(2);
 }
-/* line 43, ../sass/_layout.scss */
+/* line 45, ../sass/_layout.scss */
 #q1 .radio input[type="radio"]:checked + label:before {
   border: 2px solid transparent;
   background: white;
   transform: scale(2);
 }
-/* line 50, ../sass/_layout.scss */
+/* line 52, ../sass/_layout.scss */
 #q1 .radio input[type="radio"]:checked + label:after {
   border: 2px solid black;
   background: #0288d1;
   transform: scale(2);
 }
-/* line 57, ../sass/_layout.scss */
+/* line 59, ../sass/_layout.scss */
 #q1 .radio .required {
   color: black;
   font-size: 1.2em;
   margin: 20px;
 }
-/* line 63, ../sass/_layout.scss */
+/* line 65, ../sass/_layout.scss */
 #q1 .body_questions {
   margin: 15px;
   height: 70vh;
+  overflow: scroll;
 }
 
 /* line 4, ../sass/_rules.scss */
@@ -329,4 +355,60 @@ html {
 /* line 25, ../sass/_questionAd3.scss */
 #questionAd3 .btn_next {
   margin-top: 60px;
+}
+
+/* line 4, ../sass/_questionDemo1.scss */
+#q1 .answer {
+  background-color: #40c4ff;
+}
+/* line 7, ../sass/_questionDemo1.scss */
+#q1 .answer:focus {
+  background-color: red;
+}
+/* line 12, ../sass/_questionDemo1.scss */
+#q1 .button_choice button:focus {
+  background-color: #0288d1;
+}
+/* line 15, ../sass/_questionDemo1.scss */
+#q1 .button_choice .btn {
+  width: 100%;
+  font-size: 0.8em;
+}
+/* line 22, ../sass/_questionDemo1.scss */
+#q1 h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+/* line 28, ../sass/_questionDemo1.scss */
+#q1 h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 32, ../sass/_questionDemo1.scss */
+#q1 a {
+  color: white;
+}
+
+/* line 4, ../sass/_questionDemo2.scss */
+#q2 input[type='range'] {
+  margin-top: 120px;
+  transform: rotate(270deg);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* line 14, ../sass/_questionDemo2.scss */
+#q2 .range-field {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+/* line 21, ../sass/_questionDemo2.scss */
+#q2 input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #0288d1;
+  height: 13px;
+  width: 13px;
 }
