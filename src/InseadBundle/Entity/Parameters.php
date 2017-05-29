@@ -7,6 +7,15 @@ namespace InseadBundle\Entity;
  */
 class Parameters
 {
+
+    public function addQuestion( \InseadBundle\Entity\Questions $question)
+    {
+        $this->questions[] = $question;
+
+        return $this;
+    }
+
+
     /**
      * @var int
      */

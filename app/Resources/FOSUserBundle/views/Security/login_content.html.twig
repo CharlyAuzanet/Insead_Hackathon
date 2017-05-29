@@ -29,7 +29,11 @@
                 <label for="remember_me">{{ 'security.login.remember_me'|trans }}</label>
             </div>
             <div class="col s12 submit">
-                <input type="submit" class="btn" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                <label>
+                    <input type="submit" style="display: none" class="btn" id="_submit" name="_submit" value="{{ 'security.login.submit'|trans }}" />
+                        <i class="fa fa-check fa-4x" aria-hidden="true"></i>
+                    <span class="sr-only">Loading...</span>
+                </label>
             </div>
 </form>
             <div class="col s12 subscribe">

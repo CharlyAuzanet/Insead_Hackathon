@@ -7,6 +7,16 @@ namespace InseadBundle\Entity;
  */
 class Questions
 {
+
+    public function addParameters(\InseadBundle\Entity\Parameters $parameters)
+    {
+        $this->parameters[] = $parameters;
+        $parameters->addQuestion($this);
+
+        return $this;
+    }
+
+
     public function __toString()
     {
         return $this->title;

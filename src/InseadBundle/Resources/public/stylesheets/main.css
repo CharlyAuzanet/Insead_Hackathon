@@ -28,13 +28,7 @@ html {
   font-family: 'PT Serif Caption', serif;
 }
 
-/* line 25, ../sass/_global.scss */
-.body_questions {
-  background-color: #40c4ff;
-  height: 70vh;
-}
-
-/* line 30, ../sass/_global.scss */
+/* line 26, ../sass/_global.scss */
 .btn {
   background-color: #40c4ff;
 }
@@ -107,9 +101,14 @@ html {
 }
 /* line 57, ../sass/_layout.scss */
 #q1 .radio .required {
-  color: white;
+  color: black;
   font-size: 1.2em;
   margin: 20px;
+}
+/* line 63, ../sass/_layout.scss */
+#q1 .body_questions {
+  margin: 15px;
+  height: 70vh;
 }
 
 /* line 4, ../sass/_rules.scss */
