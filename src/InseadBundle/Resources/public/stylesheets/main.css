@@ -92,12 +92,11 @@ h3 {
 #q1 .footerDemo {
   background-color: #039be5;
   padding: 20px;
-  position: fixed;
   width: 100%;
   bottom: 0;
   margin: 0;
 }
-/* line 28, ../sass/_layout.scss */
+/* line 27, ../sass/_layout.scss */
 #q1 h1 {
   font-style: italic;
   font-weight: bold;
@@ -106,34 +105,33 @@ h3 {
   color: white;
   text-shadow: 10px 5px 10px  black;
 }
-/* line 39, ../sass/_layout.scss */
+/* line 38, ../sass/_layout.scss */
 #q1 .radio input[type="radio"] + label:before {
   border: 2px solid grey;
   background: transparent;
   transform: scale(2);
 }
-/* line 45, ../sass/_layout.scss */
+/* line 44, ../sass/_layout.scss */
 #q1 .radio input[type="radio"]:checked + label:before {
   border: 2px solid transparent;
   background: white;
   transform: scale(2);
 }
-/* line 52, ../sass/_layout.scss */
+/* line 51, ../sass/_layout.scss */
 #q1 .radio input[type="radio"]:checked + label:after {
   border: 2px solid black;
   background: #0288d1;
   transform: scale(2);
 }
-/* line 59, ../sass/_layout.scss */
+/* line 58, ../sass/_layout.scss */
 #q1 .radio .required {
   color: black;
   font-size: 1.2em;
   margin: 20px;
 }
-/* line 65, ../sass/_layout.scss */
+/* line 64, ../sass/_layout.scss */
 #q1 .body_questions {
   margin: 15px;
-  height: 70vh;
   overflow: scroll;
 }
 
@@ -177,8 +175,8 @@ h3 {
 /* line 3, ../sass/_login.scss */
 #log .row_login {
   background-color: #039be5;
-  height: 90vh;
   border-radius: 5px;
+  padding-bottom: 20px;
 }
 /* line 8, ../sass/_login.scss */
 #log .logo, #log img {
@@ -201,7 +199,7 @@ h3 {
 }
 /* line 25, ../sass/_login.scss */
 #log .subscribe, #log .submit {
-  margin-top: 30px;
+  margin-top: 20px;
   text-align: center;
 }
 /* line 32, ../sass/_login.scss */
@@ -248,38 +246,36 @@ h3 {
 /* line 12, ../sass/_listAd.scss */
 #listad .footerAd {
   background-color: #039be5;
-  position: fixed;
   bottom: 0;
   width: 100%;
   padding-top: 20px;
   margin: 0;
 }
-/* line 20, ../sass/_listAd.scss */
+/* line 19, ../sass/_listAd.scss */
 #listad .row_adlist {
   overflow: scroll;
   margin: 15px;
-  height: 70vh;
   background-color: #e6f2f0;
 }
-/* line 26, ../sass/_listAd.scss */
+/* line 24, ../sass/_listAd.scss */
 #listad .card {
   margin-top: 15px;
   padding: 10px;
 }
-/* line 30, ../sass/_listAd.scss */
+/* line 28, ../sass/_listAd.scss */
 #listad .card-content {
   text-align: center;
 }
-/* line 33, ../sass/_listAd.scss */
+/* line 31, ../sass/_listAd.scss */
 #listad h1 {
   text-shadow: 10px 10px 10px black;
   color: white;
 }
-/* line 37, ../sass/_listAd.scss */
+/* line 35, ../sass/_listAd.scss */
 #listad h3 {
   font-size: 2em;
 }
-/* line 40, ../sass/_listAd.scss */
+/* line 38, ../sass/_listAd.scss */
 #listad .points {
   text-align: center;
   background-color: #0288d1;
@@ -288,7 +284,7 @@ h3 {
   border-radius: 50%;
   box-shadow: 6px 6px 6px black;
 }
-/* line 49, ../sass/_listAd.scss */
+/* line 47, ../sass/_listAd.scss */
 #listad .settings {
   text-align: center;
   color: #0288d1;
