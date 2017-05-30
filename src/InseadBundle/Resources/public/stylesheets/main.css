@@ -487,19 +487,19 @@ h3 {
 
 /* line 3, ../sass/_questionDemo5.scss */
 #q5 .choice_number {
-  width: 100%;
-  height: 100%;
-  background-color: #0288d1;
-  border: none;
-  cursor: pointer;
-}
-/* line 10, ../sass/_questionDemo5.scss */
-#q5 .choice_number:focus {
+  width: 50px;
+  height: 50px;
   background-color: #40c4ff;
   border: none;
   cursor: pointer;
 }
-/* line 15, ../sass/_questionDemo5.scss */
+/* line 11, ../sass/_questionDemo5.scss */
+#q5 .choice_number:focus {
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+}
+/* line 16, ../sass/_questionDemo5.scss */
 #q5 .number_2, #q5 .number_3 {
   margin-top: 5%;
 }
