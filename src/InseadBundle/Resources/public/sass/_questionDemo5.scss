@@ -1,15 +1,16 @@
 #q5 {
 
   .choice_number {
-    width: 100%;
-    height: 100%;
+    width: 50px;
+    height: 50px;
 
-    background-color: $color1;
+    background-color: $color3;
     border: none;
     cursor: pointer;
+
   }
   .choice_number:focus {
-    background-color: $color3;
+    background-color: $color1;
     border: none;
     cursor: pointer;
   }
