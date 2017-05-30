@@ -3,40 +3,62 @@
 
 {% block progress %}
 <div id="q1">
-    <div class="progress">
-        <div class="determinate" style="width: 80%"></div>
-    </div>
-    {% endblock %}
-    {% block body %}
-        <div class="row body_questions z-depth-3">
-            <div class="col s12">
-                <h2>{{ question }}</h2>
-                {{ form_start(form) }}
-                <div class="row">
-                    <div class="col s10 offset-s1">
-                        <h2>{{ form_widget(form.choices) }}</h2>
-                    </div>
+    <div id="q4">
+        <div class="progress">
+            <div class="determinate" style="width: 80%"></div>
+        </div>
+        {% endblock %}
+        {% block body %}
+            <div class="row body_questions z-depth-3">
+                <div class="col s12">
+                    <h2>{{ question }}</h2>
                 </div>
+                    <div class="row choices">
+                        <div class="col s5 offset-s1 center align">
+                            <a class="btn-floating btn-large waves-effect waves-light choice"><i class="material-icons">check_circle</i></a>
+                            <div class="row title">
+                                <div class="col s12 center align">
+                                    <h3>YES</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s5 pull-s1 center align">
+                            <a class="btn-floating btn-large waves-effect waves-light choice"><i class="material-icons">clear</i></a>
+                            <div class="row title">
+                                <div class="col s12 center align">
+                                    <h3>NO</h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col s12 center align">
+                             <a class="btn-floating btn-large waves-effect waves-light choice"><i class="material-icons">not_interested</i></a>
+                            <div class="row title">
+                                <div class="col s12 center align">
+                                    <h3>Share Responsibility</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+    </div>
+</div>
+        {% endblock %}
+	
+    {% block footer %}
+        <div class="row footerDemo z-depth-3">
+            <div class="col s4 offset-s1 center-align">
+                <a href="{{ path('insead_questionDemo3') }}">
+                    <button class="btn">Return
+                    </button>
+                </a>
+            </div>
+            <div class="col s4 offset-s1 center-align">
+                <a href="{{ path('insead_questionDemo5') }}">
+                    <button class="btn pulse" type="submit" value="Next">Next</button>
+                </a>
             </div>
         </div>
     {% endblock %}
-    
-	{% block footer %}
-    <div class="row footerDemo z-depth-3">
-        <div class="col s4 offset-s1 center-align">
-            <a href="{{ path('insead_rules') }}">
-                <button class="btn">Return
-                </button>
-            </a>
-        </div>
-        <div class="col s4 offset-s1 center-align">
-            {{ form_widget(form) }}
-            <button class="btn pulse" type="submit" value="Next">Next</button>
-        </div>
-        {{ form_end(form) }}
-    </div>
-</div>
-{% endblock %}
 
 {% block javascripts %}
     {{ parent() }}

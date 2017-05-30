@@ -3,46 +3,134 @@
 
 {% block progress %}
 <div id="q1">
-    <div class="progress">
-        <div class="determinate" style="width: 60%"></div>
-    </div>
-    {% endblock %}
-    {% block body %}
-        <div class="row body_questions z-depth-3">
-            <div class="col s12">
-                <h2>{{ question }}</h2>
-                {{ form_start(form) }}
-                <div class="row">
-                    <div class="col s10 offset-s1">
-                        <h2>{{ form_widget(form.choices) }}</h2>
+    <div id="q3">
+        <div class="progress">
+            <div class="determinate" style="width: 60%"></div>
+        </div>
+        {% endblock %}
+        {% block body %}
+            <div class="row body_questions z-depth-3">
+                <div class="col s12">
+                    <h2>{{ question }}</h2>
+                </div>
+                        <div class="row">
+                        <div class="questions">
+                            <ul class="collection">
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">card_travel</i>
+                                    <span class="title">Choice 1</span>
+                                    <p>High managerial, administrative or professional</p>
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test1" />
+                                                <label for="test1"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">folder</i>
+                                    <span class="title">Choice 2</span>
+                                    <p>Intermediate managerial, administrative or professional</p>
+                                    
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test2" />
+                                                <label for="test2"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">insert_chart</i>
+                                    <span class="title">Choice 3</span>
+                                    <p>Supervisor, clerical, Junior managerial, <br>
+                                        administrative or professional
+                                       
+                                    </p>
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test3" />
+                                                <label for="test3"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">business_center</i>
+                                    <span class="title">Choice 4</span>
+                                    <p>Intellectual professional, Executive, Freelance
+                                    </p>
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test4" />
+                                                <label for="test4"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">group</i>
+                                    <span class="title">Choice 5</span>
+                                    <p>Intermediate profession: Public sector <br>
+                                        (health, teaching ... ) compagnies</p>
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test5" />
+                                                <label for="test5"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                                <li class="collection-item avatar">
+                                    <i class="material-icons circle blue">pie_chart</i>
+                                    <span class="title">Choice 6</span>
+                                    <p>Intermediate Professional Liberal Profession</p>
+                                    <a href="#!" class="secondary-content">
+                                        <form action="#">
+                                            <p>
+                                                <input type="checkbox" id="test6" />
+                                                <label for="test6"></label>
+                                            </p>
+                                        </form>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
+                    
                 </div>
             </div>
-        </div>
-    {% endblock %}
-	
-	{% block footer %}
-    <div class="row footerDemo z-depth-3">
-        <div class="col s4 offset-s1 center-align">
-            <a href="{{ path('insead_rules') }}">
-                <button class="btn">Return
-                </button>
-            </a>
-        </div>
-        <div class="col s4 offset-s1 center-align">
-            {{ form_widget(form) }}
-            <button class="btn pulse" type="submit" value="Next">Next</button>
-        </div>
-        {{ form_end(form) }}
+        {% endblock %}
+        
+        {% block footer %}
+            <div class="row footerDemo z-depth-3">
+                <div class="col s4 offset-s1 center-align">
+                    <a href="{{ path('insead_questionDemo2') }}">
+                        <button class="btn">Return
+                        </button>
+                    </a>
+                </div>
+                <div class="col s4 offset-s1 center-align">
+                    <a href="{{ path('insead_questionDemo4') }}">
+                    <button class="btn pulse" type="submit" value="Next">Next</button>
+                    </a>
+                </div>
+            </div>
     </div>
 </div>
-{% endblock %}
-
-{% block javascripts %}
-    {{ parent() }}
-    <script>
-        $(document).ready(function() {
-            $('select').material_select();
-        });
-    </script>
-{% endblock %}
+    {% endblock %}
+    
+    {% block javascripts %}
+        {{ parent() }}
+        <script>
+            $(document).ready(function() {
+                $('select').material_select();
+            });
+        </script>
+    {% endblock %}
