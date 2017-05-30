@@ -400,7 +400,7 @@ h3 {
 }
 /* line 15, ../sass/_questionDemo1.scss */
 #q1 .button_choice button:hover {
-  background-color: yellow;
+  background-color: #0288d1;
 }
 /* line 18, ../sass/_questionDemo1.scss */
 #q1 .button_choice .btn {
