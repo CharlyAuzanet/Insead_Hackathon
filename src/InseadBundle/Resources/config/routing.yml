@@ -1,3 +1,6 @@
+index:
+    path:     /
+    defaults: { _controller: InseadBundle:Default:index }
 
 insead_questionDemo1:
     path:     /q1

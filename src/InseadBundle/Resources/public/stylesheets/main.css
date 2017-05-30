@@ -33,6 +33,11 @@ h3 {
   background-color: #40c4ff;
 }
 
+/* line 29, ../sass/_global.scss */
+.preloader-wrapper {
+  position: center;
+}
+
 /* line 5, ../sass/_register.scss */
 #register .form_register {
   margin-top: 50px;

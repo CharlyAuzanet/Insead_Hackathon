@@ -40,4 +40,8 @@ class DefaultController extends Controller
     {
         return $this->render('@Insead/user/questionAd3.html.twig');
     }
+    public function indexAction()
+    {
+        return $this->render('@Insead/user/index.html.twig');
+    }
 }
