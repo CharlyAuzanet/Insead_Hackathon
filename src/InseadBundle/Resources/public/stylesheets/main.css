@@ -1,50 +1,465 @@
-/*
-Error: Invalid CSS after "..._questionDemo1"": expected "{", was ";"
-        on line 12 of /Applications/MAMP/htdocs/Projets/projet_insead/insead_project/src/InseadBundle/Resources/public/sass/main.scss
+/* line 6, ../sass/_global.scss */
+img {
+  width: 100%;
+}
 
-7: @import "_adVideo";
-8: @import "_questionAd1";
-9: @import "_questionAd2";
-10: @import "_questionAd3";
-11: <<<<<<< HEAD
-12: @import "_questionDemo1";
-13: @import "_questionDemo2";
-14: 
-15: =======
-16: @import "_questionDemo4";
-17: @import "_questionDemo5";
+/* line 10, ../sass/_global.scss */
+h1 {
+  font-size: 3em;
+}
 
-Backtrace:
-/Applications/MAMP/htdocs/Projets/projet_insead/insead_project/src/InseadBundle/Resources/public/sass/main.scss:12
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:665:in `block'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:658:in `ruleset'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-/Library/Ruby/Gems/2.0.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `call'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:254:in `report_changes'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:323:in `poll_changed_directories'
-/Library/Ruby/Gems/2.0.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"..._questionDemo1\"\": expected \"{\", was \";\"\A         on line 12 of /Applications/MAMP/htdocs/Projets/projet_insead/insead_project/src/InseadBundle/Resources/public/sass/main.scss\A \A 7: @import \"_adVideo\";\A 8: @import \"_questionAd1\";\A 9: @import \"_questionAd2\";\A 10: @import \"_questionAd3\";\A 11: <<<<<<< HEAD\A 12: @import \"_questionDemo1\";\A 13: @import \"_questionDemo2\";\A 14: \A 15: =======\A 16: @import \"_questionDemo4\";\A 17: @import \"_questionDemo5\";"; }
+/* line 13, ../sass/_global.scss */
+h2 {
+  font-size: 2em;
+}
+
+/* line 16, ../sass/_global.scss */
+h3 {
+  font-size: 1.5em;
+}
+
+/* line 19, ../sass/_global.scss */
+.material-icons {
+  font-size: 50px;
+}
+
+/* line 22, ../sass/_global.scss */
+html {
+  font-family: 'PT Serif Caption', serif;
+}
+
+/* line 26, ../sass/_global.scss */
+.btn {
+  background-color: #40c4ff;
+}
+
+/* line 5, ../sass/_register.scss */
+#register .form_register {
+  margin-top: 50px;
+  padding: 20px;
+}
+/* line 9, ../sass/_register.scss */
+#register .form {
+  padding: 0;
+  color: #039be5;
+}
+/* line 13, ../sass/_register.scss */
+#register .text {
+  margin-bottom: 20px;
+}
+/* line 16, ../sass/_register.scss */
+#register .btn_register {
+  text-align: center;
+  margin-top: 50px;
+}
+/* line 20, ../sass/_register.scss */
+#register p {
+  font-size: 1.1em;
+  text-align: center;
+  color: #0288d1;
+  font-family: "PT Serif Caption";
+}
+/* line 27, ../sass/_register.scss */
+#register .required.active {
+  color: #0288d1;
+  font-family: 'PT Serif Caption';
+  font-size: 1.3em;
+}
+/* line 35, ../sass/_register.scss */
+#register .required {
+  color: #039be5;
+  font-family: "PT Serif Caption";
+}
+/* line 40, ../sass/_register.scss */
+#register #fos_user_registration_form_email, #register #fos_user_registration_form_username, #register #fos_user_registration_form_plainPassword_first, #register #fos_user_registration_form_plainPassword_second {
+  border-bottom: 1px solid #039be5;
+}
+
+/* line 4, ../sass/_layout.scss */
+#q1 .headerDemo {
+  background-color: #039be5;
+}
+/* line 9, ../sass/_layout.scss */
+#q1 .progress {
+  margin: 0;
+  background: #0277bd;
+}
+/* line 14, ../sass/_layout.scss */
+#q1 .progress .determinate {
+  background-color: #01579b;
+}
+/* line 19, ../sass/_layout.scss */
+#q1 .footerDemo {
+  background-color: #039be5;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  margin: 0;
+}
+/* line 28, ../sass/_layout.scss */
+#q1 h1 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5em;
+  text-align: left;
+  color: white;
+  text-shadow: 10px 5px 10px  black;
+}
+/* line 39, ../sass/_layout.scss */
+#q1 .radio input[type="radio"] + label:before {
+  border: 2px solid grey;
+  background: transparent;
+  transform: scale(2);
+}
+/* line 45, ../sass/_layout.scss */
+#q1 .radio input[type="radio"]:checked + label:before {
+  border: 2px solid transparent;
+  background: white;
+  transform: scale(2);
+}
+/* line 52, ../sass/_layout.scss */
+#q1 .radio input[type="radio"]:checked + label:after {
+  border: 2px solid black;
+  background: #0288d1;
+  transform: scale(2);
+}
+/* line 59, ../sass/_layout.scss */
+#q1 .radio .required {
+  color: black;
+  font-size: 1.2em;
+  margin: 20px;
+}
+/* line 65, ../sass/_layout.scss */
+#q1 .body_questions {
+  margin: 15px;
+  height: 70vh;
+  overflow: scroll;
+}
+
+/* line 4, ../sass/_rules.scss */
+#rules body {
+  height: 100vh;
+  width: 100%;
+}
+/* line 9, ../sass/_rules.scss */
+#rules h2 {
+  font-style: italic;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+/* line 14, ../sass/_rules.scss */
+#rules .content_rules {
+  background-color: #0088CC;
+  margin-top: 15px;
+  margin-bottom: 20px;
+}
+/* line 21, ../sass/_rules.scss */
+#rules .title_rules {
+  margin-top: 20px;
+}
+/* line 26, ../sass/_rules.scss */
+#rules .rules {
+  height: 100vh;
+  margin-bottom: 0;
+}
+/* line 33, ../sass/_rules.scss */
+#rules p {
+  font-size: medium;
+  line-height: 30px;
+  color: white;
+}
+/* line 40, ../sass/_rules.scss */
+#rules .btn_begin {
+  margin-top: 15%;
+}
+
+/* line 3, ../sass/_login.scss */
+#log .row_login {
+  background-color: #039be5;
+  height: 90vh;
+  border-radius: 5px;
+}
+/* line 8, ../sass/_login.scss */
+#log .logo, #log img {
+  margin-top: 15px;
+  border-radius: 5px;
+}
+/* line 12, ../sass/_login.scss */
+#log .logo {
+  margin-bottom: 30px;
+  padding: 10px;
+}
+/* line 17, ../sass/_login.scss */
+#log input, #log label {
+  color: white;
+  font-size: 1.2em;
+}
+/* line 21, ../sass/_login.scss */
+#log #password, #log #username {
+  border-bottom: 1px solid white;
+}
+/* line 25, ../sass/_login.scss */
+#log .subscribe, #log .submit {
+  margin-top: 30px;
+  text-align: center;
+}
+/* line 32, ../sass/_login.scss */
+#log .checkbox input[type="checkbox"] + label:before {
+  border: 2px solid white;
+  background: transparent;
+}
+/* line 36, ../sass/_login.scss */
+#log .checkbox input[type="checkbox"]:checked + label:before {
+  border: 2px solid transparent;
+  border-bottom: 2px solid white;
+  border-right: 2px solid white;
+  background: transparent;
+}
+/* line 42, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"] + label:after {
+  border: 2px solid white;
+  background: transparent;
+}
+/* line 46, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"]:checked + label:after {
+  background: white;
+}
+/* line 49, ../sass/_login.scss */
+#log .checkbox input.filled-in[type="checkbox"]:checked + label:before {
+  border-top: 2px solid transparent;
+  border-left: 2px solid transparent;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+/* line 3, ../sass/_listAd.scss */
+#listad .headerAd {
+  background-color: #0288d1;
+}
+/* line 6, ../sass/_listAd.scss */
+#listad .adBox {
+  background-color: #039be5;
+}
+/* line 9, ../sass/_listAd.scss */
+#listad a {
+  color: #0288d1;
+}
+/* line 12, ../sass/_listAd.scss */
+#listad .footerAd {
+  background-color: #039be5;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 20px;
+  margin: 0;
+}
+
+/* line 4, ../sass/_adVideo.scss */
+#adVideo .video-container {
+  margin-top: 10px;
+}
+/* line 9, ../sass/_adVideo.scss */
+#adVideo .cam {
+  margin-bottom: 0;
+}
+/* line 14, ../sass/_adVideo.scss */
+#adVideo .cam_container {
+  margin-top: 10px;
+  font-style: italic;
+}
+/* line 20, ../sass/_adVideo.scss */
+#adVideo .row {
+  margin-bottom: 0;
+}
+/* line 25, ../sass/_adVideo.scss */
+#adVideo .indice, #adVideo p {
+  margin-bottom: 0;
+}
+/* line 31, ../sass/_adVideo.scss */
+#adVideo .btn_next {
+  margin-top: 20px;
+}
+
+/* line 3, ../sass/_questionAd1.scss */
+#questionAd1 .img {
+  margin-bottom: 0;
+}
+/* line 8, ../sass/_questionAd1.scss */
+#questionAd1 .img_container {
+  margin-top: 10px;
+}
+/* line 12, ../sass/_questionAd1.scss */
+#questionAd1 .row {
+  margin-bottom: 0;
+}
+/* line 17, ../sass/_questionAd1.scss */
+#questionAd1 .btn_next {
+  margin-top: 60px;
+}
+
+/* line 3, ../sass/_questionAd2.scss */
+#questionAd2 .img {
+  margin-bottom: 0;
+}
+/* line 8, ../sass/_questionAd2.scss */
+#questionAd2 .img_container {
+  margin-top: 10px;
+}
+/* line 12, ../sass/_questionAd2.scss */
+#questionAd2 .row {
+  margin-bottom: 0;
+}
+/* line 17, ../sass/_questionAd2.scss */
+#questionAd2 textarea {
+  height: 150px;
+  background-color: #0288d1;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  text-align: left;
+}
+/* line 27, ../sass/_questionAd2.scss */
+#questionAd2 .btn_next {
+  margin-top: 60px;
+}
+
+/* line 3, ../sass/_questionAd3.scss */
+#questionAd3 .img {
+  margin-bottom: 0;
+}
+/* line 7, ../sass/_questionAd3.scss */
+#questionAd3 .img_container {
+  margin-top: 10px;
+}
+/* line 11, ../sass/_questionAd3.scss */
+#questionAd3 .row {
+  margin-bottom: 0;
+}
+/* line 15, ../sass/_questionAd3.scss */
+#questionAd3 textarea {
+  height: 150px;
+  background-color: #0288d1;
+  border-radius: 5px;
+  font-size: large;
+  color: white;
+  text-align: left;
+}
+/* line 25, ../sass/_questionAd3.scss */
+#questionAd3 .btn_next {
+  margin-top: 60px;
+}
+
+/* line 4, ../sass/_questionDemo1.scss */
+#q1 .answer {
+  background-color: #40c4ff;
+}
+/* line 7, ../sass/_questionDemo1.scss */
+#q1 .answer:focus {
+  background-color: red;
+}
+/* line 12, ../sass/_questionDemo1.scss */
+#q1 .button_choice button:focus {
+  background-color: #0288d1;
+}
+/* line 15, ../sass/_questionDemo1.scss */
+#q1 .button_choice .btn {
+  width: 100%;
+  font-size: 0.8em;
+}
+/* line 22, ../sass/_questionDemo1.scss */
+#q1 h3 {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  font-size: 1em;
+}
+/* line 28, ../sass/_questionDemo1.scss */
+#q1 h2 {
+  font-size: 1.5em;
+  text-align: center;
+}
+/* line 32, ../sass/_questionDemo1.scss */
+#q1 a {
+  color: white;
+}
+
+/* line 4, ../sass/_questionDemo2.scss */
+#q2 input[type='range'] {
+  margin-top: 120px;
+  transform: rotate(270deg);
+  box-sizing: border-box;
+  cursor: pointer;
+  font-size: 16px;
+}
+/* line 14, ../sass/_questionDemo2.scss */
+#q2 .range-field {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+/* line 21, ../sass/_questionDemo2.scss */
+#q2 input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: #0288d1;
+  height: 13px;
+  width: 13px;
+}
+
+/* line 4, ../sass/_questionDemo4.scss */
+#q4 .btn-floating.btn-large i {
+  /*font-size: 50px;
+  line-height:100px;
+  margin-right: 30px;*/
+}
+/* line 10, ../sass/_questionDemo4.scss */
+#q4 .choice {
+  margin-top: 20%;
+  /*width: 10vh;
+  height: 10vh;*/
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+}
+/* line 19, ../sass/_questionDemo4.scss */
+#q4 .choice i {
+  color: white;
+}
+/* line 23, ../sass/_questionDemo4.scss */
+#q4 .choice:focus {
+  background-color: red;
+  border: none;
+  cursor: pointer;
+}
+/* line 29, ../sass/_questionDemo4.scss */
+#q4 h2 {
+  text-align: center;
+}
+/* line 33, ../sass/_questionDemo4.scss */
+#q4 h3 {
+  text-align: center;
+  font-size: large;
+}
+/* line 37, ../sass/_questionDemo4.scss */
+#q4 .title {
+  margin-top: 5%;
+}
+
+/* line 3, ../sass/_questionDemo5.scss */
+#q5 .choice_number {
+  width: 100%;
+  height: 100%;
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+}
+/* line 11, ../sass/_questionDemo5.scss */
+#q5 .choice_number:focus {
+  background-color: #40c4ff;
+  border: none;
+  cursor: pointer;
+}
+/* line 16, ../sass/_questionDemo5.scss */
+#q5 .number_2, #q5 .number_3 {
+  margin-top: 5%;
+}
