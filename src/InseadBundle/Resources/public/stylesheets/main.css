@@ -391,7 +391,7 @@ h3 {
   background-color: #40c4ff;
 }
 /* line 7, ../sass/_questionDemo1.scss */
-#q1 .answer:focus {
+#q1 .answer:hover {
   background-color: red;
 }
 /* line 12, ../sass/_questionDemo1.scss */
@@ -399,22 +399,26 @@ h3 {
   background-color: #0288d1;
 }
 /* line 15, ../sass/_questionDemo1.scss */
+#q1 .button_choice button:hover {
+  background-color: yellow;
+}
+/* line 18, ../sass/_questionDemo1.scss */
 #q1 .button_choice .btn {
   width: 100%;
   font-size: 0.8em;
 }
-/* line 22, ../sass/_questionDemo1.scss */
+/* line 25, ../sass/_questionDemo1.scss */
 #q1 h3 {
   margin-top: 5px;
   margin-bottom: 5px;
   font-size: 1em;
 }
-/* line 28, ../sass/_questionDemo1.scss */
+/* line 31, ../sass/_questionDemo1.scss */
 #q1 h2 {
   font-size: 1.5em;
   text-align: center;
 }
-/* line 32, ../sass/_questionDemo1.scss */
+/* line 35, ../sass/_questionDemo1.scss */
 #q1 a {
   color: white;
 }

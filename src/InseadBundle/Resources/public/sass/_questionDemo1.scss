@@ -4,13 +4,16 @@
   .answer {
     background-color: $color3;
   }
-  .answer:focus {
+  .answer:hover {
     background-color: red;
 
   }
   .button_choice {
     button:focus{
       background-color: $color1;
+    }
+    button:hover{
+      background-color: yellow;
     }
     .btn {
         width: 100%;
