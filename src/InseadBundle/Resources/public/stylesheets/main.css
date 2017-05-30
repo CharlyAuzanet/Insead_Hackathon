@@ -454,10 +454,10 @@ h3 {
 }
 /* line 10, ../sass/_questionDemo4.scss */
 #q4 .choice {
-  margin-top: 20%;
-  /*width: 10vh;
-  height: 10vh;*/
-  background-color: #0288d1;
+  margin-top: 10%;
+  width: 80px;
+  height: 80px;
+  background-color: #40c4ff;
   border: none;
   cursor: pointer;
 }
@@ -467,7 +467,7 @@ h3 {
 }
 /* line 23, ../sass/_questionDemo4.scss */
 #q4 .choice:focus {
-  background-color: red;
+  background-color: #0288d1;
   border: none;
   cursor: pointer;
 }
@@ -493,13 +493,13 @@ h3 {
   border: none;
   cursor: pointer;
 }
-/* line 11, ../sass/_questionDemo5.scss */
+/* line 10, ../sass/_questionDemo5.scss */
 #q5 .choice_number:focus {
   background-color: #40c4ff;
   border: none;
   cursor: pointer;
 }
-/* line 16, ../sass/_questionDemo5.scss */
+/* line 15, ../sass/_questionDemo5.scss */
 #q5 .number_2, #q5 .number_3 {
   margin-top: 5%;
 }
