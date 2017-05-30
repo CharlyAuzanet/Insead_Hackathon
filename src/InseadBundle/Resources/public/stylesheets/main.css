@@ -447,12 +447,6 @@ h3 {
 }
 
 /* line 4, ../sass/_questionDemo4.scss */
-#q4 .btn-floating.btn-large i {
-  /*font-size: 50px;
-  line-height:100px;
-  margin-right: 30px;*/
-}
-/* line 10, ../sass/_questionDemo4.scss */
 #q4 .choice {
   margin-top: 10%;
   width: 80px;
@@ -461,12 +455,18 @@ h3 {
   border: none;
   cursor: pointer;
 }
-/* line 19, ../sass/_questionDemo4.scss */
+/* line 13, ../sass/_questionDemo4.scss */
 #q4 .choice i {
   color: white;
 }
-/* line 23, ../sass/_questionDemo4.scss */
+/* line 17, ../sass/_questionDemo4.scss */
 #q4 .choice:focus {
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+}
+/* line 23, ../sass/_questionDemo4.scss */
+#q4 .choice:hover {
   background-color: #0288d1;
   border: none;
   cursor: pointer;
@@ -500,6 +500,12 @@ h3 {
   cursor: pointer;
 }
 /* line 16, ../sass/_questionDemo5.scss */
+#q5 .choice_number:hover {
+  background-color: #0288d1;
+  border: none;
+  cursor: pointer;
+}
+/* line 21, ../sass/_questionDemo5.scss */
 #q5 .number_2, #q5 .number_3 {
   margin-top: 5%;
 }

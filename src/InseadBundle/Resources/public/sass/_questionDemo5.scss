@@ -13,6 +13,11 @@
     border: none;
     cursor: pointer;
   }
+  .choice_number:hover {
+    background-color: $color1;
+    border: none;
+    cursor: pointer;
+  }
   .number_2, .number_3{
     margin-top: 5%;
   }
