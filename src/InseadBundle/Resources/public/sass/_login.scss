@@ -2,8 +2,8 @@
 #log {
   .row_login {
     background-color: $color2;
-    height: 90vh;
     border-radius: 5px;
+    padding-bottom: 20px;
   }
   .logo, img {
     margin-top: 15px;
@@ -23,7 +23,7 @@
   }
 
   .subscribe, .submit {
-    margin-top: 30px;
+    margin-top: 20px;
     text-align: center;
   }
 
